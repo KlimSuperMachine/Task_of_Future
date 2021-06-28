@@ -11,10 +11,26 @@ body {
 .container {
     width: 950px;
     margin: 0 auto;
+    border: 1px solid red;
 }
 
-main {
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-content {
     background-color: #eeeeee;
+}
+
+.header {
+    padding: 40px 0 25px 0;
+}
+
+.header-left {
+    border: 1px solid green;
+    float: left;
 }
 
 .contacts-list a{
@@ -22,3 +38,9 @@ main {
     color: black;
 }
 
+.logo {
+    float: right;
+    width: 163px;
+    height: 172px;
+    border: 1px solid green;
+}
