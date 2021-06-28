@@ -33,6 +33,13 @@ body {
     float: left;
 }
 
+.header-left h1 {
+    border: 1px solid blue;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 48px;
+}
+
 .contacts-list a{
     text-decoration: none;
     color: black;
