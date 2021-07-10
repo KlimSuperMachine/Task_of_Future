@@ -1,2 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 @import "nullstyle.scss";
 
+//Общие стили
+
+body {
+	min-width: 1160px;
+	background-color: #eeeeee;
+	font-size: 14px;
+	line-height: 18px;
+	font-family: 'Roboto', sans-serif;
+	color: #000000;
+}
+
+.container {
+	border: 1px solid red;
+	width: 950px;
+	margin: 0 auto;
+}
+
+
+//Стили блоков
+
+//Header
+.header {
+	padding: 40px 0 40px 0;
+	background-image: url("../img/Группа 3.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.header-left {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		h1 {
+			font-size: 48px;
+			line-height: 48px;
+			font-weight: 300;
+		}
+
+		.contacts-list {
+			font-size: 12px;
+			font-weight: bold;
+			line-height: 25px;
+			a {
+				color: black;
+			}
+			li:last-child a {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+
+//Main
+.main-content {
+	padding: 40px 0 50px 0;
+	background-color: #eeeeee;
+
+	.container {
+		display:flex;
+		flex-direction: column;
+	}
+
+	.comment-list {
+		border-bottom: 1px solid #d4d4d4;
+
+		.user-comment {
+			p:nth-child(1){
+				font-size: 16px;
+				line-height: 18px;
+				font-weight: bold;
+			}
+			span {
+				display: inline-block;
+				margin: 0 0 0 20px;
+				font-size: 11px;
+				line-height: 18px;
+				font-weight: 300;
+			}
+			p:nth-child(2){
+				margin: 18px 0 25px 0;
+				font-size: 14px;
+				line-height: 18px;
+				font-weight: 300;
+			}
+		}
+	}
+
+	.comment-form {
+		margin: 25px 0 0 0;
+
+		h2 {
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 32px;
+		}
+
+		.form {
+			width: 460px;
+
+			label {
+				font-size: 14px;
+				font-weight: 300px;
+				line-height: 18px;
+			}
+
+			input {
+				width: 100%;
+				height: 45px;
+				border-radius: 5px;
+				margin: 10px  0 20px 0;
+			}
+
+			textarea {
+				width: 100%;
+				border: 2px solid black;
+				border-radius: 5px;
+				margin: 10px  0 0px 0;
+				background-color: #eeeeee;
+			}
+
+			button {
+				display: block;
+				font-size: 18px;
+				font-weight: 300px;
+				border: 2px solid black;
+				border-radius: 5px;
+				width: 134px;
+				height: 44px;
+				margin: 10px 0 0 auto;
+				background-color: #eeeeee;
+			}
+		}
+	}
+}
+
+//Footer
+.footer {
+	padding: 20px 0 20px 0;
+	background-color: #ffffff;
+	.container {}
+	.logo {}
+	.contacts-list {}
+	.copyright {}
+}
