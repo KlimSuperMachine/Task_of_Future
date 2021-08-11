@@ -119,22 +119,24 @@ body {
             flex-direction: column; }
   .main-content .comment-list {
     border-bottom: 1px solid #d4d4d4; }
-    .main-content .comment-list .user-comment p:nth-child(1) {
-      font-size: 16px;
-      line-height: 18px;
-      font-weight: bold; }
-    .main-content .comment-list .user-comment span {
-      display: inline-block;
-      word-spacing: 10px;
-      margin: 0 0 0 20px;
-      font-size: 11px;
-      line-height: 18px;
-      font-weight: 300; }
-    .main-content .comment-list .user-comment p:nth-child(2) {
-      margin: 18px 0 25px 0;
-      font-size: 14px;
-      line-height: 18px;
-      font-weight: 300; }
+    .main-content .comment-list .user-comment {
+      margin-bottom: 25px; }
+      .main-content .comment-list .user-comment p:nth-child(1) {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: bold; }
+      .main-content .comment-list .user-comment span {
+        display: inline-block;
+        word-spacing: 10px;
+        margin-left: 20px;
+        font-size: 11px;
+        line-height: 18px;
+        font-weight: 300; }
+      .main-content .comment-list .user-comment p:nth-child(2) {
+        margin-top: 18px;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 300; }
   .main-content .comment-form {
     margin: 25px 0 0 0; }
     .main-content .comment-form h2 {
@@ -158,6 +160,7 @@ body {
         border: 2px solid black;
         border-radius: 5px;
         margin: 10px  0 0px 0;
+        padding: 10px;
         background-color: #eeeeee; }
       .main-content .comment-form .form button {
         display: block;
